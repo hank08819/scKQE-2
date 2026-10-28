@@ -42,7 +42,7 @@ python rare_markers.py data/mouse_embryo_complete.h5ad results/mouse_embryo_comp
 ## 5. Baselines (Table 1)
 
 `baselines/` holds the scripts used for the other methods, all scored by the same protocol (`score_emb.py`: exact 15-nearest-
-neighbour graph, UMAP fuzzy weights, Leiden bisected to k). Table 1 reports Leiden seed 0.
+neighbor graph, UMAP fuzzy weights, Leiden bisected to k). Table 1 reports Leiden seed 0.
 
 | Method | Script | Settings |
 |---|---|---|

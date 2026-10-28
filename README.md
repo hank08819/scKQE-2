@@ -2,6 +2,12 @@
 
 Reproducible quantum clustering of atlas-scale single-cell data on the whole transcriptome.
 
+![11,441,407 mouse embryo nuclei in exact quantum-state space](docs/figs/qspace_embryo_11M.png)
+
+*All 11,441,407 nuclei of the complete mouse embryo atlas in exact quantum-state space (Fig. 3e of the paper). Every nucleus is an
+exact 132-qubit state, and every one of its 15 nearest states is exact, certified by Theorem 4; 93% of them share the nucleus's
+annotated type. The map is built from state fidelity alone.*
+
 scKQE-2 turns every cell into an exact quantum state built from its whole transcriptome and clusters the cells in
 quantum-state space. The encoding has no entangling gate, so every quantum feature has a closed form, no step is trained and
 no step draws a random number: the same counts give bit-for-bit identical clusters on every run on the same machine.
@@ -13,7 +19,7 @@ This package implements the method of the paper *Reproducible quantum clustering
 
 ```bash
 pip install scKQE2                 # CPU
-pip install "scKQE2[gpu]"          # + PyTorch: GPU encoding, nearest neighbours and exact quantum-state search
+pip install "scKQE2[gpu]"          # + PyTorch: GPU encoding, nearest neighbors and exact quantum-state search
 pip install "scKQE2[hardware]"     # + Qiskit: run the encoding on a quantum processor
 pip install "scKQE2[test]"; pytest # 12 tests, about 30 s
 ```
@@ -46,7 +52,7 @@ Command line: `sckqe2 atlas.h5ad --label cell_type --out clusters.csv` (`--donor
 | IDF-weighted log counts, rows of unit length | `idf_matrix_inplace` | Eq. 1, Methods |
 | Exact decomposition: ARPACK from a fixed start vector, 132 whitened scores, no random number | `exact_scores` | Methods |
 | Entanglement-free encoding: 22 blocks of 6 qubits, 3 layers of R_Y(2^-t s x) R_Z(s x), s = 0.19; 726 exact features | `encode`, `bloch_vectors` | Fig. 2a, Theorems 2-4 |
-| 15-nearest-neighbour graph with UMAP fuzzy weights | `knn_graph` | Methods |
+| 15-nearest-neighbor graph with UMAP fuzzy weights | `knn_graph` | Methods |
 | Precision Shrinkage Clustering on whole-transcriptome atlases; Leiden at k on 5,000-HVG atlases (Leiden seed 0) | `leiden_psc`, `leiden_at_k` | Methods |
 | Optional deterministic donor correction (quantum alignment) | `quantum_align` | Fig. 2d, Methods |
 
@@ -62,7 +68,7 @@ sckqe2.neighbor_purity(I, labels)                          # share of the neares
 
 The fidelity of two cells is F = prod_q (1 + r_q . r'_q)/2 over their Bloch vectors. Candidates are taken by feature distance,
 and the lower bound of Theorem 4, -log F >= ||f - f'||^2 / 4, proves that no other cell can be closer; cells without this
-certificate are searched exhaustively, so every neighbour is exact. All 888,263 nuclei of the Siletti atlas take 100 s on one GPU.
+certificate are searched exhaustively, so every neighbor is exact. All 888,263 nuclei of the Siletti atlas take 100 s on one GPU.
 
 ## Quantum hardware
 
