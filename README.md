@@ -89,4 +89,4 @@ Theorem 4, and the Qiskit circuit against the closed form.
 
 Han, H. Reproducible quantum clustering of atlas-scale single-cell data (2026). See `CITATION.cff`.
 
-Author: Henry Han, Baylor University (hank08819@gmail.com). License: MIT.
+Author: Henry Han, Baylor University (Henry_Han@Baylor.edu). License: MIT.
