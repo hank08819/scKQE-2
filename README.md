@@ -2,6 +2,8 @@
 
 Reproducible quantum clustering of atlas-scale single-cell data on the whole transcriptome.
 
+**The largest clustering in quantum-state space to date, to our knowledge: all 11,441,407 nuclei of the complete mouse embryo atlas, each an exact 132-qubit state.**
+
 ![11,441,407 mouse embryo nuclei in exact quantum-state space](docs/figs/qspace_embryo_11M.png)
 
 *All 11,441,407 nuclei of the complete mouse embryo atlas in exact quantum-state space (Fig. 3e of the paper). Every nucleus is an
