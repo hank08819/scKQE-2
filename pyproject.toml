@@ -1,0 +1,23 @@
+[project]
+name = "scKQE2"
+version = "2.0.0"
+description = "scKQE-2: reproducible quantum clustering of atlas-scale single-cell data on the whole transcriptome"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Henry Han", email = "hank08819@gmail.com"}]
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.22", "scipy>=1.9", "scikit-learn>=1.1", "pandas>=1.4", "anndata>=0.8", "scanpy>=1.9", "umap-learn>=0.5", "igraph>=0.10", "leidenalg>=0.9"]
+[project.urls]
+Homepage = "https://github.com/hank08819/scKQE-2"
+Issues = "https://github.com/hank08819/scKQE-2/issues"
+[project.optional-dependencies]
+gpu = ["torch>=2.0"]
+hardware = ["qiskit>=1.0", "qiskit-ibm-runtime>=0.20"]
+test = ["pytest"]
+[project.scripts]
+sckqe2 = "sckqe2.cli:main"
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+[tool.setuptools.packages.find]
+include = ["sckqe2*"]

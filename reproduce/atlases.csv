@@ -1,0 +1,15 @@
+atlas,cellxgene_dataset_version_id,label_key,donor_key,k_scoring,in_table1,note
+zebrafish,e3ae71af-1cd6-451b-8735-3d06e12d7360,cell_type,,,yes,
+tabula_sapiens,1c88f927-bcbb-4bb1-9881-281842945a2d,cell_type,,,yes,All Cells release of Tabula Sapiens 2.0
+fetal,f6271b1a-71f7-4c4e-a109-c9949ac42bc1,cell_type,,,yes,sci-RNA-seq3 fetal atlas
+optic_nerve,b27057d6-a6a0-40e8-a4ba-5373a03746d2,cell_type,,,yes,
+siletti_nonneuronal,bef677f9-90fa-4cc4-a0f8-6892c6f646bb,cell_type,,,yes,also Fig. 3a-d
+developing_cortex,2001fbc7-de84-4e84-9a76-4290bcd65415,cell_type,,8,yes,scored at 8 clusters (one type holds 78% of the cells)
+mouse_embryo_subset1,aaf0497e-a8a9-4a81-8b22-c1ac86507c6b,cell_type,,,yes,first of the four 2.86-million-nucleus subsets
+mouse_cerebellum,64c8b6a7-ac09-4ceb-8ad3-eaf512ea2ac2,cell_type,,,yes,
+radc_brain,54293783-669c-410e-919d-474960f8761b,cell_type,,,yes,
+mouse_cortex_hippocampus,0e7c9ff7-a65f-4909-b864-3a89c5421f55,cell_type,,,yes,
+mouse_embryo_complete,1bc30289-9565-4099-abf9-3326328c11ac,cell_type,,,no,"11,441,407 nuclei; scale test and Fig. 3e,f"
+heart_dcm_acm,6d0b8b8a-2b22-4578-b8ee-8ca4ab893594,cell_type,donor_id,,no,quantum alignment (donor_id)
+aml_bone_marrow,538e5e8b-3400-4b23-b380-17a152949c63,cell_type,,,no,marker analyses
+aida_blood,f89a12c2-7a3b-415b-ab87-bbc550fe17f4,cell_type,,,no,marker analyses

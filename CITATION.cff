@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use scKQE-2, please cite the paper below."
+title: "scKQE-2: reproducible quantum clustering of atlas-scale single-cell data"
+version: 2.0.0
+license: MIT
+repository-code: "https://github.com/hank08819/scKQE-2"
+authors:
+  - family-names: Han
+    given-names: Henry
+    affiliation: "Baylor University"
+    email: hank08819@gmail.com
+preferred-citation:
+  type: article
+  title: "Reproducible quantum clustering of atlas-scale single-cell data"
+  authors:
+    - family-names: Han
+      given-names: Henry
+  year: 2026
